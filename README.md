@@ -1,4 +1,4 @@
-# Java JS GraalVm interop
+# Java JS GraalVM interop
 
 ## Installation
 
