@@ -1,5 +1,8 @@
 # Java JS GraalVM interop
 
+This is a walk-through of running a JavaScript/node.js app on top of JVM
+with some language bindings to access Java classes from JavaScript.
+
 ## Installation
 
 ### Linux
@@ -41,7 +44,7 @@ we need `kafka-client` and `slf4j-simple` and `slf4j-api` that the Java kafka cl
 6. run Kafka JS producer that relies on Java kafka client
 
 ```shell
-./opt/graalvm/graalnodejs-community-24.0.2-linux-amd64/bin/node --vm.cp=kafka-clients-3.5.2.jar:slf4j-simple-2.0.16.jar:slf4j-api-2.0.16.jar kafka/producer.js
+/opt/graalvm/graalnodejs-community-24.0.2-linux-amd64/bin/node --vm.cp=kafka-clients-3.5.2.jar:slf4j-simple-2.0.16.jar:slf4j-api-2.0.16.jar kafka/producer.js
 ```
 
 7. run Kafka JS consumer that relies on Java kafka client
